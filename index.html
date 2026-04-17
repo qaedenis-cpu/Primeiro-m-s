@@ -3,36 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>1 mês com Neide ❤️</title>
+
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: #0d0d0d;
       color: white;
       text-align: center;
-      overflow-x: hidden;
     }
 
     section {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 20px;
       opacity: 0;
-      transform: translateY(50px);
+      transform: translateY(40px);
       transition: 1s;
     }
 
     section.show {
       opacity: 1;
       transform: translateY(0);
-    }
-
-    img {
-      max-width: 80%;
-      border-radius: 15px;
-      margin-top: 20px;
     }
 
     h1, h2 {
@@ -42,42 +37,89 @@
     .highlight {
       color: #ff4d6d;
     }
+
+    img {
+      max-width: 80%;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+
+    /* GALERIA */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .galeria img {
+      width: 45%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- MÚSICA -->
 <audio autoplay loop>
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
 
+<!-- SLIDE 1 -->
 <section>
   <h1>Há 1 mês atrás…</h1>
 </section>
 
+<!-- SLIDE 2 -->
 <section>
   <h2>tudo começou de forma <span class="highlight">simples</span></h2>
   <img src="foto1.jpg">
 </section>
 
+<!-- SLIDE 3 (GALERIA) -->
 <section>
-  <h2>mas com algo <span class="highlight">especial</span></h2>
-  <img src="foto2.jpg">
+  <h2>mas com momentos <span class="highlight">especiais</span></h2>
+
+  <div class="galeria">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+    <img src="foto4.jpg">
+    <img src="foto5.jpg">
+  </div>
 </section>
 
+<!-- SLIDE 4 -->
 <section>
   <h2>e foi ficando cada vez mais <span class="highlight">real</span></h2>
   <img src="foto3.jpg">
 </section>
 
+<!-- SLIDE 5 -->
+<section>
+  <h2>entre risadas, conversas…</h2>
+  <img src="foto4.jpg">
+</section>
+
+<!-- SLIDE 6 -->
+<section>
+  <h2>e momentos que quero guardar pra sempre 💛</h2>
+  <img src="foto5.jpg">
+</section>
+
+<!-- SLIDE 7 -->
 <section>
   <h2>hoje eu tenho certeza…</h2>
 </section>
 
+<!-- SLIDE 8 -->
 <section>
   <h2>que você vale muito a pena, <span class="highlight">Neide ❤️</span></h2>
+  <img src="foto3.jpg">
 </section>
 
+<!-- FINAL -->
 <section>
   <h1>1 mês ao seu lado…</h1>
   <h2>e isso é só o começo 💫</h2>
@@ -98,4 +140,4 @@
 </script>
 
 </body>
-    </html>
+</html>
